@@ -44,6 +44,13 @@ The following **bonus** features will be implemented:
 * [ ] User can report a pile of junk, accident or burglary
 * [ ] User can find a classification of jurisdictions from cleaner to more dirty
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+https://www.dropbox.com/s/ggtugqqesumwafu/VID-20180805-WA0041.mp4?dl=0
+
+
 
 
 ## License
