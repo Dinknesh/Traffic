@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="247dp"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:background="#972e66"
+        android:textColor="#ffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:text="Se connecter" />
+
+    <Button
+        android:id="@+id/btNewAccount"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:background="#00ffffff"
+        android:text="Creer un compte"
+        android:onClick="createAccount"
+        android:textColor="#972f70" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_marginTop="191dp"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress" />
+
+
+</RelativeLayout>

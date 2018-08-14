@@ -21,11 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        =======
-        <activity android:name=".LoginActivity" /><![CDATA[
-        >>>>>>> 85fc1d8ba36de8414d4517459f055cd5719b6904
-    ]]>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateAccount"></activity>
     </application>
 
 </manifest>
