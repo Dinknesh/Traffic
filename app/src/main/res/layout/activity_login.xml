@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,51 +7,98 @@
     tools:context=".LoginActivity">
 
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="328dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="247dp"
-        android:ems="10"
-        android:hint="  Password"
-        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="191dp"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="328dp"
+            android:ems="10"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="247dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Login Button -->
+
 
     <Button
-        android:id="@+id/btLogin"
+        android:id="@+id/btn_login"
         android:layout_width="327dp"
         android:layout_height="wrap_content"
-        android:background="#972e66"
-        android:textColor="#ffff"
+        android:layout_marginTop="20dip"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="164dp"
-        android:text="Se connecter" />
+        android:background="#972e66"
+        android:text="@string/btn_login"
+        android:textColor="#ffff" />
+
 
     <Button
-        android:id="@+id/btNewAccount"
-        android:layout_width="161dp"
+        android:id="@+id/btn_reset_password"
+        android:layout_width="327dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="95dp"
-        android:background="#00ffffff"
-        android:text="Creer un compte"
-        android:onClick="createAccount"
-        android:textColor="#972f70" />
+        android:layout_marginTop="20dip"
+        android:background="#972e66"
+        android:text="@string/btn_forgot_password"
+        android:textAllCaps="false"
+        android:textColor="#ffff" />
 
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="322dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/etPassword"
-        android:layout_alignLeft="@+id/etPassword"
-        android:layout_marginTop="191dp"
-        android:ems="10"
-        android:hint="  Email"
-        android:inputType="textEmailAddress" />
+    <!-- Link to Login Screen -->
 
 
-</RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_register"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

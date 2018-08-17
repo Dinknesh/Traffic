@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "222229482138",
-    "firebase_url": "https://trafic-9107d.firebaseio.com",
-    "project_id": "trafic-9107d",
-    "storage_bucket": "trafic-9107d.appspot.com"
+    "project_number": "39957961750",
+    "firebase_url": "https://traffic-master-5717e.firebaseio.com",
+    "project_id": "traffic-master-5717e",
+    "storage_bucket": "traffic-master-5717e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:222229482138:android:94cfdc0597f637d3",
+        "mobilesdk_app_id": "1:39957961750:android:94cfdc0597f637d3",
         "android_client_info": {
           "package_name": "com.example.amanda.traffic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "222229482138-aoro8srhgomr99a7k8cs4nj8cnrbs39g.apps.googleusercontent.com",
+          "client_id": "39957961750-renp6jf4lkas3ni6v7nquvd4e8so35j0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amanda.traffic",
+            "certificate_hash": "8936c508bb98f6862150882032e4aedf5b151539"
+          }
+        },
+        {
+          "client_id": "39957961750-o6r53okuj6ofud8ungcm2ln1htbhujq2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBVnMSILSU5D8v6vdFzybnqXnajMUDlksE"
+          "current_key": "AIzaSyD9Rta-ZA9jWv9hf52E183xXzNN0Ze0fIU"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39957961750-o6r53okuj6ofud8ungcm2ln1htbhujq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
