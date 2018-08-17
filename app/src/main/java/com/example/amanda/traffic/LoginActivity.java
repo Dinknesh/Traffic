@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -47,6 +48,7 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        FirebaseApp.initializeApp(this);
         auth = FirebaseAuth.getInstance();
 
         edt_email = (EditText) findViewById(R.id.edt_username);
@@ -55,7 +57,7 @@ public class LoginActivity extends AppCompatActivity
         tv_error = (TextView) findViewById(R.id.tvError);
 
         btn_connect = (Button) findViewById(R.id.btn_connexion);
-        btn_connect.setOnClickListener(this);
+        //btn_connect.setOnClickListener(this);
 
 
     }

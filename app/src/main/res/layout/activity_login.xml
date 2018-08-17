@@ -42,7 +42,7 @@
         android:textColor="#972f70" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/etEmail"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
