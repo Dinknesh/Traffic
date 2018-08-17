@@ -1,14 +1,14 @@
-# Traffic
-# Project 3 - *Haiti Traffic*
+# TapTap
+# Project 3 - *Haiti TapTap*
 
-**Haiti Traffic*** is an android app that allows a user to find all the way that's he can take to go somewhere with the cost and the length.
+**Haiti TapTap*** is an android app that allows a user to find all the way that's he can take to go somewhere with the cost and the length.
 
 
 ## User Stories
 
 The following **required** functionality will be implemented:
 
-* [ ]	User can **sign in to Traffic app** using OAuth login
+* [ ]	User can **sign in to TapTap app** using OAuth login
 * [ ]	User can **Find the possible paths to reach destination**
   * [ ] User can find the number of races that each road contains and the price of the race
   * [ ] User can find the place of the stations and their localization.
