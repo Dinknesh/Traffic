@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "222229482138",
+    "firebase_url": "https://trafic-9107d.firebaseio.com",
+    "project_id": "trafic-9107d",
+    "storage_bucket": "trafic-9107d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222229482138:android:94cfdc0597f637d3",
+        "android_client_info": {
+          "package_name": "com.example.amanda.traffic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222229482138-aoro8srhgomr99a7k8cs4nj8cnrbs39g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVnMSILSU5D8v6vdFzybnqXnajMUDlksE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
