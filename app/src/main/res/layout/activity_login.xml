@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".activities.LoginActivity">
 
     <EditText
         android:id="@+id/etPassword"
@@ -40,12 +40,12 @@
         android:onClick="CreateAccount"
         android:textColor="#972f70" />
 
+
     <EditText
         android:id="@+id/editText3"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/etPassword"
         android:layout_marginTop="191dp"
         android:ems="10"
         android:hint="  Email"

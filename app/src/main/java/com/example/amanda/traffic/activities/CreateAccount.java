@@ -1,7 +1,9 @@
-package com.example.amanda.traffic;
+package com.example.amanda.traffic.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.amanda.traffic.R;
 
 public class CreateAccount extends AppCompatActivity {
 
