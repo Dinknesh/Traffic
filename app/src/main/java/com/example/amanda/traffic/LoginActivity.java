@@ -53,6 +53,7 @@ public class LoginActivity extends AppCompatActivity{
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
+            Log.d("LoginActivity", "User already logged in");
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
@@ -62,8 +63,8 @@ public class LoginActivity extends AppCompatActivity{
         // set the view now
         setContentView(R.layout.activity_login);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
 
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
@@ -78,7 +79,7 @@ public class LoginActivity extends AppCompatActivity{
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                startActivity(new Intent(LoginActivity.this, CreateAccount.class));
             }
         });
 
@@ -118,6 +119,7 @@ public class LoginActivity extends AppCompatActivity{
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
+                                    Log.d("LoginActivity", "Logged in.");
                                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
@@ -127,4 +129,5 @@ public class LoginActivity extends AppCompatActivity{
             }
         });
     }
+
 }
