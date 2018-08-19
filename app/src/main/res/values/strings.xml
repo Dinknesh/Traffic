@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Traffic</string>
+    <string name="cemail">Email</string>
+    <string name="password">Password</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="creer_un_compte">Creer un compte</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="confirmer_mot_de_passe">Confirmer mot de passe</string>
+    <string name="creer">Creer</string>
+    <string name="email">Email</string>
 </resources>

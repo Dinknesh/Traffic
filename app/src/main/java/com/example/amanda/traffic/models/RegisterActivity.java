@@ -1,9 +1,11 @@
-package com.example.amanda.traffic;
+package com.example.amanda.traffic.models;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CreateAccount extends AppCompatActivity {
+import com.example.amanda.traffic.R;
+
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
