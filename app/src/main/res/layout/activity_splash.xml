@@ -7,7 +7,7 @@
     android:background="@drawable/r1"
     android:backgroundTint="@color/colorback"
 
-    tools:context=".SplashActivity">
+    tools:context=".UI.SplashActivity">
 
     <TextView
         android:id="@+id/tvLogo"
