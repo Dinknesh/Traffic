@@ -22,7 +22,7 @@
             android:layout_height="111dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/ic_logo" />
+            app:srcCompat="@drawable/logo1" />
 
 
         <android.support.design.widget.TextInputLayout
