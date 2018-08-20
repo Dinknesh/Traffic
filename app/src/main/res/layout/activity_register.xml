@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorback"
-    tools:context=".RegisterActivity">
+    tools:context=".UI.RegisterActivity">
 
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_height="111dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/logo1" />
+            app:srcCompat="@drawable/ic_logo" />
 
 
         <android.support.design.widget.TextInputLayout

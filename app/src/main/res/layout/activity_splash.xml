@@ -7,7 +7,7 @@
     android:background="@drawable/r1"
     android:backgroundTint="@color/colorback"
 
-    tools:context=".SplashActivity">
+    tools:context=".UI.SplashActivity">
 
     <TextView
         android:id="@+id/tvLogo"
@@ -28,5 +28,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="162dp"
-        android:src="@drawable/logo1" />
+        android:src="@drawable/ic_logo" />
 </RelativeLayout>

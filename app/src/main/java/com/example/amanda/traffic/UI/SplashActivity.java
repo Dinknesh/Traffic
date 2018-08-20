@@ -1,9 +1,11 @@
-package com.example.amanda.traffic;
+package com.example.amanda.traffic.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.amanda.traffic.R;
 
 public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 2000;
