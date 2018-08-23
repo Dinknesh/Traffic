@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.amanda.traffic.Fragment.FragmentRoadsActivity;
 import com.example.amanda.traffic.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -111,6 +112,11 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         progressBar.setVisibility(View.GONE);
+    }
+
+    public void Test(View view) {
+        Intent intent = new Intent(this, FragmentRoadsActivity.class);
+        startActivity(intent);
     }
 }
 
