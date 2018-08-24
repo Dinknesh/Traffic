@@ -6,4 +6,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/search_bar"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        android:title="Search" />
 </menu>
