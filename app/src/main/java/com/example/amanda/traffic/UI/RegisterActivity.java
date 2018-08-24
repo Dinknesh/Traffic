@@ -114,9 +114,6 @@ public class RegisterActivity extends AppCompatActivity {
         progressBar.setVisibility(View.GONE);
     }
 
-    public void Test(View view) {
-        Intent intent = new Intent(this, FragmentRoadsActivity.class);
-        startActivity(intent);
-    }
+
 }
 

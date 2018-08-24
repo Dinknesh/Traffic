@@ -22,4 +22,30 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_anchorGravity="top|center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="Test"
+                android:text="Trouver son itineraire"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                tools:ignore="OnClick"/>
+
+
+        </LinearLayout>
+
+
 </android.support.v4.widget.DrawerLayout>
