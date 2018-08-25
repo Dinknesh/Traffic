@@ -29,6 +29,7 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
         <activity android:name=".Fragment.FragmentRoadsActivity"></activity>
+        <activity android:name=".Fragment2.FragmentStepActivity"></activity>
     </application>
 
 </manifest>

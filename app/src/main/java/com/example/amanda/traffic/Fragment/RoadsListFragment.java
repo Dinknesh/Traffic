@@ -1,5 +1,6 @@
 package com.example.amanda.traffic.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.amanda.traffic.Adapter.ArrayAdapterRoads;
+import com.example.amanda.traffic.Fragment2.FragmentStepActivity;
+import com.example.amanda.traffic.Fragment2.StepListFragment;
 import com.example.amanda.traffic.Models.Roads;
 import com.example.amanda.traffic.R;
 
@@ -36,6 +40,7 @@ public class RoadsListFragment extends Fragment {
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                startActivity(new Intent(getActivity(), FragmentStepActivity.class));
 
               /*  StepListFragment cv = new StepListFragment();
                 FragmentManager fm= getFragmentManager();

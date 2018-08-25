@@ -1,4 +1,4 @@
-package com.example.amanda.traffic.Fragment2;
+package com.example.amanda.traffic.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.amanda.traffic.Adapter.ArrayAdapterStep;
 import com.example.amanda.traffic.Models.Step;
 import com.example.amanda.traffic.R;
 
@@ -31,7 +32,7 @@ public class StepListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_step_list, container, false);
 
-        mainListView = (ListView) v.findViewById(R.id.lvRoads);
+        mainListView = (ListView) v.findViewById(R.id.lvStep);
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
