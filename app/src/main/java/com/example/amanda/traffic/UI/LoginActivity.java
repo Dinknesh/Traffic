@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity{
 
         if (auth.getCurrentUser() != null) {
             Log.d("LoginActivity", "User already logged in");
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, FragmentRoadsActivity.class));
             finish();
         }
 
@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity{
                                     }
                                 } else {
                                     Log.d("LoginActivity", "Logged in.");
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, FragmentRoadsActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
