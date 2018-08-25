@@ -1,26 +1,26 @@
-package com.example.amanda.traffic.Fragment;
+package com.example.amanda.traffic.Fragment2;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.amanda.traffic.Adapter.ArrayAdapterRoads;
-import com.example.amanda.traffic.Fragment2.FragmentStepActivity;
-import com.example.amanda.traffic.Fragment2.StepListFragment;
-import com.example.amanda.traffic.Models.Roads;
+import com.example.amanda.traffic.Adapter.ArrayAdapterStep;
+import com.example.amanda.traffic.Fragment.MapListFragment;
+import com.example.amanda.traffic.Models.Step;
 import com.example.amanda.traffic.R;
 
 import java.util.ArrayList;
 
-public class RoadsListFragment extends Fragment {
+public class StepListFragment extends Fragment {
 
-    ArrayAdapterRoads arrayAdapterRoads;
-    ArrayList<Roads> aRoads;
+    ArrayAdapterStep arrayAdapterRoads;
+    ArrayList<Step> aRoads;
     ListView mainListView;
 /*
     private ListView mainListView ;
@@ -33,28 +33,26 @@ public class RoadsListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_roads_list, container, false);
+        View v = inflater.inflate(R.layout.fragment_step_list, container, false);
 
-        mainListView = (ListView) v.findViewById(R.id.lvRoads);
+        mainListView = (ListView) v.findViewById(R.id.lvStep);
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                startActivity(new Intent(getActivity(), FragmentStepActivity.class));
-
-              /*  StepListFragment cv = new StepListFragment();
+                MapListFragment cv = new MapListFragment();
                 FragmentManager fm= getFragmentManager();
                 FragmentTransaction ft= fm.beginTransaction();
-                ft.replace(R.id.custom_view, cv);
-                ft.commit();*/
+                ft.replace(R.id.Frame, cv);
+                ft.commit();
             }
         });
 
         aRoads = new ArrayList<>();
-        arrayAdapterRoads = new ArrayAdapterRoads(getActivity(), aRoads);
+        arrayAdapterRoads = new ArrayAdapterStep(getActivity(), aRoads);
         mainListView.setAdapter(arrayAdapterRoads);
 
-        arrayAdapterRoads.addAll(Roads.fromFakeData());
+        arrayAdapterRoads.addAll(Step.fromFakeData());
         arrayAdapterRoads.notifyDataSetChanged();
 
       /*  // Find the ListView resource.

@@ -98,7 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.makeText(RegisterActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
-                                    startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                                    startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                                     finish();
                                 }
                             }
@@ -113,7 +113,10 @@ public class RegisterActivity extends AppCompatActivity {
         super.onResume();
         progressBar.setVisibility(View.GONE);
     }
-
-
+/*
+    public void Test(View view) {
+        Intent intent = new Intent(this, FragmentRoadsActivity.class);
+        startActivity(intent);
+    }*/
 }
 

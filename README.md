@@ -16,6 +16,7 @@ The following **required** functionality will be implemented:
   * [ ] User can find **GPS tracking of the path**
 * [ ] User can be  **notify by the app if he is on the wrong voice**
 * [ ] User can be  **notify by the app if there is an interesting place in the area, like a fast food**
+* [ ] To generate **revenue**, on the way, users will have notifications (**advertising**) about businesses located on their route within a radius of 500 meters
   
   Find the possible paths to reach your destination
 By indicating the number of races that each road contains and the price of the race.

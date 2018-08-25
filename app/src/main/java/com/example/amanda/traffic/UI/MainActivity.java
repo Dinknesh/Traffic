@@ -1,6 +1,5 @@
 package com.example.amanda.traffic.UI;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,9 +12,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.example.amanda.traffic.Fragment.FragmentRoadsActivity;
 import com.example.amanda.traffic.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -35,7 +38,21 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+        if (mAuth.getCurrentUser() != null){
+            TextView tv = navigationView.getHeaderView(0).findViewById(R.id.nav_header_tv_name);
+            ImageView imageView = navigationView.getHeaderView(0).findViewById(R.id.nav_header_tv_image);
+            TextView textView = navigationView.getHeaderView(0).findViewById(R.id.nav_header_tv_email);
+
+            tv.setText(mAuth.getCurrentUser().getDisplayName());
+            textView.setText(mAuth.getCurrentUser().getEmail());
+
+        }
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -92,10 +109,5 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void Test(View view) {
-        Intent intent = new Intent(this, FragmentRoadsActivity.class);
-        startActivity(intent);
     }
 }
