@@ -3,39 +3,52 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#11000000">
 
-    <TextView
-        android:id="@+id/tvDep"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="RtlCompat" />
+        android:layout_height="90dp"
+        android:background="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
 
-    <TextView
-        android:id="@+id/tvPrix"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:gravity="end"
-        android:layout_below="@+id/tvDep"
-        android:layout_marginEnd="20dp"
-        android:text="TextView"
-        tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/tvDep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="RtlCompat" />
 
-    <TextView
-        android:id="@+id/tvEnd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/tvDep"
-        android:layout_marginTop="70dp"
-        android:text="TextView"
-        tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/tvPrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/tvDep"
+            android:layout_marginEnd="20dp"
+            android:text="TextView"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/tvEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvDep"
+          android:layout_below="@+id/tvPrix"
+            android:text="TextView"
+            tools:ignore="RtlCompat" />
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
