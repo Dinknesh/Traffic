@@ -21,6 +21,9 @@ public class FragmentStepActivity extends AppCompatActivity {
         Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Display the Up button home
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Roads"));
         tabLayout.addTab(tabLayout.newTab().setText("Map"));
@@ -57,11 +60,15 @@ public class FragmentStepActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // Respond to the action bar's Up/Home button
+                finish();
+                return true;
+            case R.id.action_settings:
+                return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+
 }
