@@ -65,7 +65,7 @@ public class FragmentRoadsActivity extends AppCompatActivity {
         //inflate the button search
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
-        MenuItem searchItem = menu.findItem(R.id.search_bar);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         return true;
     }
