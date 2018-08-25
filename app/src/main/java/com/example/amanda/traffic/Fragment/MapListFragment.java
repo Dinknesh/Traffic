@@ -1,23 +1,16 @@
 package com.example.amanda.traffic.Fragment;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.amanda.traffic.R;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -68,7 +61,7 @@ public class MapListFragment extends Fragment implements OnMapReadyCallback {
 
         // Add a marker in Sydney and move the camera
         LatLng haiti = new LatLng(18.862281, -72.263205);
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(haiti, 12));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(haiti, 7));
         map.addMarker(new MarkerOptions().position(haiti).title("Haiti"));
 
     }
