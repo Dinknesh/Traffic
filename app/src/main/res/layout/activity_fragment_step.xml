@@ -35,4 +35,11 @@
         android:layout_height="fill_parent"
         android:layout_below="@id/tab_layout"/>
 
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 </RelativeLayout>

@@ -30,7 +30,7 @@ public class FragmentStepActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Step"));
-        tabLayout.addTab(tabLayout.newTab().setText("Map"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Map"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = findViewById(R.id.pager);
