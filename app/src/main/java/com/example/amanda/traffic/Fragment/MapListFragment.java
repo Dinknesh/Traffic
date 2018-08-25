@@ -27,16 +27,7 @@ public class MapListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_map_roads, container, false);
 
-/*
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);*/
 
-      /*  pd = new ProgressDialog(getActivity());
-        pd.setTitle("Localisation en cours...");
-        pd.setMessage(".....");
-        pd.setCancelable(false);
-        pd.show();
-*/
         myWebView =  v.findViewById(R.id.webview);
         // Configure related browser settings
         myWebView.getSettings().setLoadsImagesAutomatically(true);
@@ -56,10 +47,7 @@ public class MapListFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                /*// Respond to the action bar's Up/Home button to the home page with (finishAffinity)
-                Intent i = new Intent(getActivity(), FayActivity.class);
-                startActivity(i);
-                finishAffinity();*/
+
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -90,7 +78,7 @@ public class MapListFragment extends Fragment {
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-         //   pd.dismiss();
+
 
         }
 
