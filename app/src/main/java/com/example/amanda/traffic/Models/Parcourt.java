@@ -9,7 +9,7 @@ public class Parcourt implements Serializable {
     String latitude;
     String longitude;
 
-    public Parcourt() {
+/*    public Parcourt() {
     }
 
     public Parcourt(int id, String distance, String latitude, String longitude) {
@@ -63,5 +63,5 @@ public class Parcourt implements Serializable {
 
 
         return results;
-    }
+    }*/
 }
