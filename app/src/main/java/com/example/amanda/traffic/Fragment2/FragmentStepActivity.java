@@ -64,8 +64,8 @@ public class FragmentStepActivity extends AppCompatActivity {
         //inflate the button search
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
-        MenuItem searchItem = menu.findItem(R.id.search_bar);
-        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+   //     final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         return true;
     }
 

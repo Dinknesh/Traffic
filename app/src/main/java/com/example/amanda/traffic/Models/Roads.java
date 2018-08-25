@@ -38,23 +38,23 @@ public class Roads implements Serializable {
         ArrayList<Roads> results = new ArrayList<>();
 
         Roads roads = new Roads();
-        roads.setTitle("Route 1");
+        roads.setTitle("Delmas");
         roads.setImageView(R.drawable.ic_roads);
 
         Roads roads1 = new Roads();
-        roads1.setTitle("Route 2");
+        roads1.setTitle("Carrefour");
         roads1.setImageView(R.drawable.ic_roads);
 
         Roads roads2 = new Roads();
-        roads2.setTitle("Route 3");
+        roads2.setTitle("Gerald");
         roads2.setImageView(R.drawable.ic_roads);
 
         Roads roads3 = new Roads();
-        roads3.setTitle("Route 4");
+        roads3.setTitle("Nazon");
         roads3.setImageView(R.drawable.ic_roads);
 
         Roads roads4 = new Roads();
-        roads4.setTitle("Route 5");
+        roads4.setTitle("Clercine");
         roads4.setImageView(R.drawable.ic_roads);
 
         results.add(roads);
