@@ -36,14 +36,14 @@ public class Step  implements Serializable{
         ArrayList<Step> results = new ArrayList<>();
 
         Step roads = new Step();
-        roads.setTitle("Route 1");
-        roads.setTitle1("Route 1");
-        roads.setTitle3("Route 1");
+        roads.setTitle("From Portail to Carrefour");
+        roads.setTitle1("100m");
+        roads.setTitle3("25 gourdes");
 
         Step roads1 = new Step();
-        roads1.setTitle("Debut");
-        roads1.setTitle1("Fin");
-        roads1.setTitle3("Price");
+        roads1.setTitle("From potail to Delmas");
+        roads1.setTitle1("100m");
+        roads1.setTitle3("25gourdes");
 
 
         Step roads2 = new Step();
