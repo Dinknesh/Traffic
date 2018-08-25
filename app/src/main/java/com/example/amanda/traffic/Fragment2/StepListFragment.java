@@ -1,4 +1,4 @@
-package com.example.amanda.traffic.Fragment;
+package com.example.amanda.traffic.Fragment2;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.amanda.traffic.Models.Roads;
+import com.example.amanda.traffic.Models.Step;
 import com.example.amanda.traffic.R;
 
 import java.util.ArrayList;
 
-public class RoadsListFragment extends Fragment {
+public class StepListFragment extends Fragment {
 
-    ArrayAdapterRoads arrayAdapterRoads;
-    ArrayList<Roads> aRoads;
+    ArrayAdapterStep arrayAdapterRoads;
+    ArrayList<Step> aRoads;
     ListView mainListView;
 /*
     private ListView mainListView ;
@@ -29,7 +29,7 @@ public class RoadsListFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_roads_list, container, false);
+        View v = inflater.inflate(R.layout.fragment_step_list, container, false);
 
         mainListView = (ListView) v.findViewById(R.id.lvRoads);
 
@@ -37,19 +37,14 @@ public class RoadsListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-              /*  StepListFragment cv = new StepListFragment();
-                FragmentManager fm= getFragmentManager();
-                FragmentTransaction ft= fm.beginTransaction();
-                ft.replace(R.id.custom_view, cv);
-                ft.commit();*/
             }
         });
 
         aRoads = new ArrayList<>();
-        arrayAdapterRoads = new ArrayAdapterRoads(getActivity(), aRoads);
+        arrayAdapterRoads = new ArrayAdapterStep(getActivity(), aRoads);
         mainListView.setAdapter(arrayAdapterRoads);
 
-        arrayAdapterRoads.addAll(Roads.fromFakeData());
+        arrayAdapterRoads.addAll(Step.fromFakeData());
         arrayAdapterRoads.notifyDataSetChanged();
 
       /*  // Find the ListView resource.
