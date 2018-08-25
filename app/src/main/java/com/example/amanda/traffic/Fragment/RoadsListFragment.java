@@ -42,6 +42,7 @@ public class RoadsListFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 startActivity(new Intent(getActivity(), FragmentStepActivity.class));
 
+
               /*  StepListFragment cv = new StepListFragment();
                 FragmentManager fm= getFragmentManager();
                 FragmentTransaction ft= fm.beginTransaction();

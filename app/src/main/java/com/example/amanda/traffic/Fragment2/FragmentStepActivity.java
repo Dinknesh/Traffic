@@ -31,6 +31,12 @@ public class FragmentStepActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Step"));
         //tabLayout.addTab(tabLayout.newTab().setText("Map"));
+/*
+        tabLayout = findViewById(R.id.tab_layout);
+        tabLayout.addTab(tabLayout.newTab().setText("Roads"));
+        tabLayout.addTab(tabLayout.newTab().setText("Map"));
+*/
+
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = findViewById(R.id.pager);
@@ -82,4 +88,12 @@ public class FragmentStepActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+/*
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }*/
 }

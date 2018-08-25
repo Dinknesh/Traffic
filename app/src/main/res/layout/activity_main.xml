@@ -24,13 +24,10 @@
 
 
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/linearLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_anchorGravity="top|center">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/button2"
@@ -42,10 +39,49 @@
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="15dp"
-                tools:ignore="OnClick"/>
+                tools:ignore="OnClick"
+                android:layout_centerInParent="true"/>
 
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
 
-        </LinearLayout>
+                <Button
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/accident_text"
+                    android:id="@+id/btn_accident"/>
 
+                <Button
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/traffic_jam_text"
+                    android:id="@+id/btn_traffic_jam"/>
+
+                <Button
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/agression_text"
+                    android:id="@+id/btn_agression"/>
+            </LinearLayout>
+        </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

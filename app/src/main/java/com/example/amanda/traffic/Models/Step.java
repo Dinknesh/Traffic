@@ -44,6 +44,14 @@ public class Step  implements Serializable{
         roads1.setTitle("From potail to Delmas");
         roads1.setTitle1("100m");
         roads1.setTitle3("25gourdes");
+/*        roads.setTitle("Route 1");
+        roads.setTitle1("Route 1");
+        roads.setTitle3("Route 1");
+
+        Step roads1 = new Step();
+        roads1.setTitle("Debut");
+        roads1.setTitle1("Fin");
+        roads1.setTitle3("Price");*/
 
 
         Step roads2 = new Step();
@@ -78,4 +86,10 @@ public class Step  implements Serializable{
         return results;
     }
 
+/*        results.add(roads);
+        results.add(roads1);
+        results.add(roads2);
+
+        return results;
+    }*/
 }

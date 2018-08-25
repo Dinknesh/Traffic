@@ -1,90 +1,72 @@
 package com.example.amanda.traffic.Fragment;
 
-import android.annotation.TargetApi;
-import android.app.ProgressDialog;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import com.example.amanda.traffic.R;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapListFragment extends Fragment {
+public class MapListFragment extends Fragment implements OnMapReadyCallback {
 
-    private WebView myWebView;
-    ProgressDialog pd;
+    GoogleMap map;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v =  inflater.inflate(R.layout.fragment_map_roads, container, false);
+        View v = inflater.inflate(R.layout.fragment_map_roads, container, false);
 
-
-        myWebView =  v.findViewById(R.id.webview);
-        // Configure related browser settings
-        myWebView.getSettings().setLoadsImagesAutomatically(true);
-        myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        // Configure the client to use when opening URLs
-        myWebView.setWebViewClient(new MyWebBrowser());
-        // the initial URL
-        myWebView.loadUrl("https://goo.gl/maps/xkks3n16G3t");
-
-        myWebView.getSettings().setSupportZoom(true);
-        myWebView.getSettings().setBuiltInZoomControls(true); // allow pinch to zooom
-        myWebView.getSettings().setDisplayZoomControls(false); // disable the default zoom controls on the pagere
         return v;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.mapview);
+        mapFragment.getMapAsync(this); //this is important
     }
 
-    // Manages the behavior when URLs are loaded
-    private class MyWebBrowser extends WebViewClient {
-        @SuppressWarnings("deprecation")
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            view.loadUrl(url);
-            return true;
-        }
-
-        @TargetApi(Build.VERSION_CODES.N)
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-            view.loadUrl(request.getUrl().toString());
-            return true;
-        }
-
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            super.onPageStarted(view, url, favicon);
-            //Toast.makeText(getActivity(), "!!!", Toast.LENGTH_SHORT).show();
-        }
-
-        @Override
-        public void onPageFinished(WebView view, String url) {
-            super.onPageFinished(view, url);
-
-
-        }
-
-        @Override
-        public void onPageCommitVisible(WebView view, String url) {
-            super.onPageCommitVisible(view, url);
-        }
+    @Override
+    public void onResume() {
+        super.onResume();
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        map = googleMap;
+        setUpMap();
+    }
+
+    public void setUpMap(){
+//        mGoogleMap = map;
+
+        // Add a marker in Sydney and move the camera
+        LatLng haiti = new LatLng(18.862281, -72.263205);
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(haiti, 7));
+        map.addMarker(new MarkerOptions().position(haiti).title("Haiti"));
+
+    }
+
+
+
 }

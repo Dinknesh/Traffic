@@ -37,8 +37,11 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="itin_raire"><u>Itinéraire :</u></string>
     <string name="adress"> Port-au-Prince</string>
     <string name="text_s"></string>
+    <string name="accident_text">Accident</string>
+    <string name="traffic_jam_text">Blocus</string>
+    <string name="agression_text">Agression</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
