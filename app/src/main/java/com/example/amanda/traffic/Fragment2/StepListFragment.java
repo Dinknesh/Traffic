@@ -2,6 +2,8 @@ package com.example.amanda.traffic.Fragment2;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.amanda.traffic.Adapter.ArrayAdapterStep;
+import com.example.amanda.traffic.Fragment.MapListFragment;
 import com.example.amanda.traffic.Models.Step;
 import com.example.amanda.traffic.R;
 
@@ -37,7 +40,11 @@ public class StepListFragment extends Fragment {
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
+                MapListFragment cv = new MapListFragment();
+                FragmentManager fm= getFragmentManager();
+                FragmentTransaction ft= fm.beginTransaction();
+                ft.replace(R.id.Frame, cv);
+                ft.commit();
             }
         });
 

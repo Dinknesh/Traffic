@@ -52,10 +52,30 @@ public class Step  implements Serializable{
         roads2.setTitle3("Route 1");
 
 
+        Step roads4 = new Step();
+        roads4.setTitle("From Portail to Carrefour");
+        roads4.setTitle1("100m");
+        roads4.setTitle3("25 gourdes");
+
+        Step roads3 = new Step();
+        roads3.setTitle("From potail to Delmas");
+        roads3.setTitle1("100m");
+        roads3.setTitle3("25gourdes");
+
+/*
+        Step roads5 = new Step();
+        roads5.setTitle("Route 1");
+        roads5.setTitle1("Route 1");
+        roads5.setTitle3("Route 1");*/
+
         results.add(roads);
         results.add(roads1);
         results.add(roads2);
+        results.add(roads4);
+        results.add(roads3);
+       // results.add(roads5);
 
         return results;
     }
+
 }
